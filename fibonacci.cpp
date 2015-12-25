@@ -1,6 +1,11 @@
 #include <iostream>
 #include "fibonacci.h"
 
+/*
+ *fibonacci(): Takes long long integer as fibonacci position.
+ *Returns: fibonacci number at that position
+ * */
+
 long long fibonacci(long long n){
   
   try{
