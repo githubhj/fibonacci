@@ -1,14 +1,30 @@
-/*Author: Harshit Jain*/
 #include <iostream>
 #include "fibonacci.h"
 
-/*
- * fibonacci(): returns nth fibonacci number
- * */
+long long fibonacci(long long n){
+  
+  try{
+    if(n==1 || n == 0){
+      return n;
+    }
 
-int fibonacci(int n){
-  if (n <=1){
-    return n;
+    else if(n < 1){
+      throw -1;
+    }
+
+    else{
+      long long n1=0, n2=1, num, i;
+      
+      for(i=2; i<=n; i++){
+        num=n1+n2;
+        n1=n2;
+        n2=num;
+      }
+      return n2;
+    }
   }
-  return fibonacci(n-1) + fibonacci(n-2);
+  catch(long long){
+    std::cerr << "Error: Please enter a number greater than equal to 1" << std::endl;
+    exit(-1);
+  }  
 }

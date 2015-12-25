@@ -1,7 +1,7 @@
 #### HarpTool MakeFile
 
 INCLUDE 	= -I ./
-CXXFLAGS  = -std=c++11 -Wall
+CXXFLAGS  = -std=c++11 -Wall -g
 CXX     	= g++
 RM      	= /bin/rm -rf
 

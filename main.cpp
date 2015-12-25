@@ -1,8 +1,3 @@
-/*
- * Date: 25-12-2015
- * Author: Harshit Jain
- * Project: Git Training
- * */
 #include <iostream>
 #include "fibonacci.h"
 
