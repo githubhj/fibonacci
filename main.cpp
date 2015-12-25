@@ -1,3 +1,7 @@
+/*
+ * Author: Harshit Jain
+ * Project: Git Training
+ * */
 #include <iostream>
 #include "fibonacci.h"
 
